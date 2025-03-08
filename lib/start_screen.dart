@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen(this.startQuiz, {super.key});
@@ -17,9 +18,13 @@ class StartScreen extends StatelessWidget {
             color: Color.fromARGB(125, 255, 255, 255),
           ),
           const SizedBox(height: 100), // Add space between image and button
-          const Text(
+          Text(
             'Learn Flutter the fun way!',
-            style: TextStyle(fontSize: 24, color: Colors.white),
+            style:  GoogleFonts.loveLight(
+              color: const Color.fromARGB(255, 139, 108, 108),
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
           ),
           const SizedBox(height: 20),
           OutlinedButton.icon(
